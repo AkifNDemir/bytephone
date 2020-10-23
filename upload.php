@@ -11,7 +11,7 @@ $dizin = date("Y") . '/' . date("m") . '/'. date("d") . '/';
 
 $dosyaAdi = date("H-i-s") . '_' . rand(0000000000,9999999999) . '.jpg';
 $yuklenecek_dosya = $dizin . $dosyaAdi;
-$url = "https://127.0.0.1/D:/Fivem/Servers/fivem-img/img/" . $dizin; // sonuna / koymanız gerekiyor. -- you have to put / at the end.
+$url = "https://bytephone.herokuapp.com/img/" . $dizin; // sonuna / koymanız gerekiyor. -- you have to put / at the end.
 
 
 if (move_uploaded_file($_FILES['files']['tmp_name'][0], $yuklenecek_dosya))
